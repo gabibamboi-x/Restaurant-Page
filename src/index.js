@@ -1,4 +1,5 @@
 import "./styles/main.css";
-import landingPage from "./modules/initialPageLoad";
+import "./styles/responsive.css"
+import landingPage from "./modules/loadHome";
 
 landingPage()

@@ -64,7 +64,7 @@ section {
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .textBox h1 {
@@ -116,12 +116,8 @@ section {
 }
 
 /*swiper*/
-.mySwiper {
-  width: 600px;
-}
-
 .swiper {
-  width: 100%;
+  width: 90%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -129,12 +125,17 @@ section {
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
 
 .swiper-slide img {
-  display: block;
+  width: 400px;
+}
+
+.swiper-slide-next,
+.swiper-slide-prev {
+  filter: blur(3.5px);
 }
 
 .swiper-button-prev,
