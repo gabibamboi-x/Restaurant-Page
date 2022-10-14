@@ -43,22 +43,27 @@
   .textBox {
     max-width: 400px;
   }
+  .menu {
+    display: none;
+  }
 }
 
 
 
 @media screen and (max-width: 1020px) {
-  .logo img {
-    max-width: 135px;
+  .mainContent {
+    margin-top: calc(100vh / 18);
+    gap: calc(100vh / 20);
+    flex-direction: column;
   }
 
-  .mainContent {
-    margin-top: 7.5%;
-    flex-direction: column;
+  .logo img {
+    max-width: 180px;
   }
 
   .socialMedia {
     writing-mode: initial;
+    margin-top: 150px;
   }
 
   .socialMedia li a {
@@ -81,21 +86,62 @@
 
 
 @media screen and (max-width: 600px) {
-  .mainContent {
-    flex-direction: column;
-  }
-
+  .menu,
   .menu img {
+    display: block;
     width: 30px;
     height: 30px;
   }
 
-  .close-btn {
-    display: none;
+  .menu {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 10000;
+    cursor: pointer;
   }
 
   .navigation {
     display: none;
+  }
+
+  .close-btn {
+    display: none;
+    filter: invert(1);
+  }
+
+  .active {
+    height: 101%;
+    width: 101%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, .95);
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+  }
+
+  .active ul {
+    color: aliceblue;
+    font-size: 3em;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .active li {
+    border: none;
+  }
+
+  .active li:hover {
+    border: none;
+    cursor: pointer;
   }
 
   .socialMedia {

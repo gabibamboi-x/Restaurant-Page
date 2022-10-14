@@ -44,6 +44,11 @@ section {
   border-bottom: 3px solid black;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
 .logo img {
   max-width: 250px;
 }
