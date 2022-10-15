@@ -1,79 +1,113 @@
-@media screen and (min-width: 1850px) {
+
+@media screen and (min-width: 1775px) {
+  .header ul {
+    font-size: 1.8em;
+  }
+
+  .textBox h1 {
+    margin: 0;
+    font-size: 3em;
+  }
+  
+  .textBox p {
+    font-size: 1.5em;
+  }
+  
+  .textBox a {
+    font-size: 2em;
+  }
+
   .swiper-slide {
-    width: 650px;
-    height: 650px;
+    width: 600px;
+    height: 600px;
   }
   
   .swiper-slide img {
-    width: 650px;
+    width: 600px;
   }
 
   .textBox {
-    max-width: 850px;
+    min-width: 850px;
   }
 }
 
+@media screen and (min-width: 1351px) and (max-width: 1774px){
+  .header ul {
+    font-size: 1.8em;
+  }
 
-@media screen and (min-width: 1700px) {
+  .textBox h1 {
+    margin: 0;
+    font-size: 3em;
+  }
+  
+  .textBox p {
+    font-size: 1.5em;
+  }
+  
+  .textBox a {
+    font-size: 2em;
+  }
+
   .swiper-slide {
-    width: 500px;
-    height: 500px;
+    width: 475px;
+    height: 475px;
   }
   
   .swiper-slide img {
-    width: 500px;
+    width: 475px;
   }
 
   .textBox {
-    max-width: 800px;
+    min-width: 550px;
   }
 }
 
+@media screen and (max-width: 1350px){
+  .mainContent {
+    margin-top: 100px;
+    gap: calc(100vh / 20);
+    flex-direction: column;
+  }
 
-@media screen and (max-width: 1300px) {
   .swiper-slide {
-    width: 300px;
-    height: 300px;
+    width: 375px;
+    height: 375px;
   }
   
   .swiper-slide img {
-    width: 300px;
+    width: 375px;
   }
 
   .textBox {
-    max-width: 400px;
+    min-width: 650px;
   }
-  .menu {
-    display: none;
+
+  .socialMedia {
+    writing-mode: initial;
+    margin-top: 80px;
+  }
+
+  .socialMedia li a {
+    border: none;
+    border-bottom: 1px solid white;
+  }
+  
+  .socialMedia li:hover a {
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
   }
 }
 
 
 
 @media screen and (max-width: 1020px) {
-  .mainContent {
-    margin-top: calc(100vh / 18);
-    gap: calc(100vh / 20);
-    flex-direction: column;
+  .textBox {
+    min-width: 250px;
   }
 
   .logo img {
-    max-width: 180px;
-  }
-
-  .socialMedia {
-    writing-mode: initial;
-    margin-top: 150px;
-  }
-
-  .socialMedia li a {
-    border: none;
-    border-bottom: 3px solid white;
-  }
-  
-  .socialMedia li:hover a {
-    border: none;
-    border-bottom: 3px solid rgb(0, 0, 0);
+    max-width: 200px;
   }
 } 
 
@@ -86,19 +120,23 @@
 
 
 @media screen and (max-width: 600px) {
+  .mainContent {
+    margin-top: 100px;
+  }
+
   .menu,
   .menu img {
     display: block;
     width: 30px;
     height: 30px;
+    cursor: pointer;
   }
 
-  .menu {
+  .close-btn {
     position: fixed;
     top: 50px;
     right: 50px;
     z-index: 10000;
-    cursor: pointer;
   }
 
   .navigation {
@@ -118,21 +156,21 @@
     justify-content: center;
     align-items: center;
 
-    background-color: rgba(0, 0, 0, .95);
+    background-color: rgba(0, 0, 0, 0.906);
 
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10000;
+    z-index: 1000;
   }
 
   .active ul {
     color: aliceblue;
-    font-size: 3em;
+    font-size: 2em;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
+    gap: 75px;
   }
 
   .active li {
@@ -140,14 +178,19 @@
   }
 
   .active li:hover {
-    border: none;
+    border-bottom: .5px solid white;
     cursor: pointer;
   }
 
   .socialMedia {
     writing-mode: initial;
     margin-inline: 2px;
-    margin-top: 60px;
+    margin-top: 75px;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    margin-block: 20px;
   }
 
   .swiper-slide {

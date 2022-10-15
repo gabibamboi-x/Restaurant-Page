@@ -1,0 +1,79 @@
+.nHome {
+  align-items: flex-start;
+}
+
+.menuContent {
+  width: 100%;
+  margin-block: 100px;
+}
+
+.drinks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.drinks h1 {
+  font-size: 2em;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.wrapper h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.item * {
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: baseline;
+}
+.item h3 {
+  margin-left: 5px;
+  font-size: 2em;
+  font-weight: 400;
+}
+.item p {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+span {
+  flex: 1;
+  border-bottom: 3px dotted #333;
+}
+
+@media screen and (max-width: 1020px){
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .drinks h1 {
+    font-size: 1.5em;
+  }
+  
+  .wrapper h2 {
+    font-size: 1.25em;
+  }
+  .item h3 {
+    font-size: 1.5em;
+  }
+  .item p {
+    font-size: 1em;
+  }
+}

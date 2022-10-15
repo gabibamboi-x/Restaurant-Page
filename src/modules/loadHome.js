@@ -7,6 +7,7 @@ import coffee6 from "../Images/coffee6.jpg"
 import coffee7 from "../Images/coffee7.jpg"
 import coffee8 from "../Images/coffee8.jpg"
 import coffee9 from "../Images/coffee9.jpg"
+import gitlogo from "../Images/gitlogo.png" 
 
 const homeModule = (function () {
   const section = document.querySelector('.section')
@@ -14,7 +15,8 @@ const homeModule = (function () {
   const mainContent = document.createElement('div')
   mainContent.setAttribute('class', 'mainContent')
 
-  mainContent.innerHTML = '<div class="textBox">\
+  mainContent.innerHTML = 
+  '<div class="textBox">\
       <h1>The Only Coffee You Need</h1>\
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.\
         Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\
@@ -44,8 +46,15 @@ const homeModule = (function () {
         <li><a href="#">TWITTER</a></li>\
         <li><a href="#">INSTAGRAM</a></li>\
       </ul>\
-    </div>'
-    
+    </div>\
+    <br>\
+    <footer>\
+      <a href="https://github.com/gabibamboi-x">\
+        Developed by <img class="git"> gabibamboi-x\
+      </a>\
+    </footer>\
+  </div>'
+
   section.appendChild(mainContent)
 
   const coffeeDiv = document.querySelectorAll('.images') 
@@ -82,6 +91,10 @@ const homeModule = (function () {
     },
     loop: true,
   })
+
+ const github = document.querySelector('.git')
+
+  github.src = gitlogo
 })()
 
 export default homeModule

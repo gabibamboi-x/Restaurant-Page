@@ -12,6 +12,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2px;
 }
 
 .header {
@@ -51,6 +52,14 @@ section {
 
 .logo img {
   max-width: 250px;
+}
+
+.menuContent {
+  display: none;
+}
+
+.contactContent {
+  display: none;
 }
 
 .mainContent {
@@ -118,6 +127,24 @@ section {
 
 .socialMedia li:hover a {
   border-left: 3px solid rgb(0, 0, 0);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: grey;
+}
+
+a img {
+  width: 20px;
 }
 
 /*swiper*/
