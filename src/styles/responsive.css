@@ -90,7 +90,7 @@
 
   .socialMedia li a {
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #FAF9F6;
   }
   
   .socialMedia li:hover a {

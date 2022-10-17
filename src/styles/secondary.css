@@ -4,7 +4,7 @@
 
 .menuContent {
   width: 100%;
-  margin-block: 100px;
+  margin-block: 125px;
 }
 
 .drinks {
@@ -17,6 +17,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
+  padding-inline: 25px;
+}
+
+.wrapper > div {
+  border-bottom-right-radius: 30px;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  padding: 10px;
 }
 
 .drinks h1 {
@@ -25,6 +33,7 @@
   margin-bottom: 20px;
   font-weight: 900;
   font-style: italic;
+  color: red;
 }
 
 .wrapper h2 {
@@ -56,11 +65,48 @@ span {
   border-bottom: 3px dotted #333;
 }
 
+
+
+.contactContent{
+  width: 100%;
+  margin-block: 125px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contactinfo {
+  max-width: 20%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-inline: auto;
+}
+
+iframe {
+  padding-top: 25px;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.contactContent footer, 
+.menuContent footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 30px;
+}
+
 @media screen and (max-width: 1020px){
   .wrapper {
     grid-template-columns: 1fr;
   }
 }
+
+
 
 @media screen and (max-width: 600px){
   .drinks h1 {

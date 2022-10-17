@@ -1,3 +1,4 @@
+
 const menu = (function() {
   const menuContent = document.createElement('div')
   menuContent.setAttribute('class', 'menuContent')
@@ -39,7 +40,10 @@ const menu = (function() {
       </div>\
     <div><h2>FLAT WHITE</h2>\
         <div class="item"><p>Lorem, ipsum dolor sit amet</p><span></span><h3>$6.99</h3></div>\
-  </div></div></div>'
+  </div></div></div>\
+  <footer>\
+    <a href="https://github.com/gabibamboi-x">Developed by <img class="gitMenu"> gabibamboi-x</a>\
+  </footer>'
 
   section.appendChild(menuContent)
 })()

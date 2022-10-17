@@ -7,7 +7,6 @@ import coffee6 from "../Images/coffee6.jpg"
 import coffee7 from "../Images/coffee7.jpg"
 import coffee8 from "../Images/coffee8.jpg"
 import coffee9 from "../Images/coffee9.jpg"
-import gitlogo from "../Images/gitlogo.png" 
 
 const homeModule = (function () {
   const section = document.querySelector('.section')
@@ -91,10 +90,6 @@ const homeModule = (function () {
     },
     loop: true,
   })
-
- const github = document.querySelector('.git')
-
-  github.src = gitlogo
 })()
 
 export default homeModule

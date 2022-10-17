@@ -1,17 +1,29 @@
 import "./styles/main.css"
 import "./styles/secondary.css"
 import "./styles/responsive.css"
+import gitlogo from "./Images/gitlogo.png" 
 import header from "./modules/template"
 import home from "./modules/loadHome"
 import menu from "./modules/loadMenu"
+import contact from "./modules/loadContact"
 
-// mobile menu functionality and footer
+
 (function() {
   // get DOM elements
+  const section = document.querySelector('.section')
+  // navigation
   const menu = document.querySelector('.menu')
   const menuBtn = document.querySelector('.menu-btn')
   const closeBtn = document.querySelector('.close-btn')
   const navigation = document.querySelector('.navigation')
+  // content
+  const homeContent = document.querySelector('.mainContent')
+  const menuContent = document.querySelector('.menuContent')
+  const contactContent = document.querySelector('.contactContent')
+  // the tabs
+  const home = document.getElementById('home')
+  const menuTab = document.getElementById('menu')
+  const contact = document.getElementById('contact')
 
   // open the menu, add active class for the actual menu to show
   menuBtn.addEventListener('click' , () => {
@@ -41,32 +53,43 @@ import menu from "./modules/loadMenu"
       menuBtn.style.display = 'block'
     }
   }
-})();
 
-// handle switching the tabs
-(function() {
-  const homeContent = document.querySelector('.mainContent')
-  const menuContent = document.querySelector('.menuContent')
-  const home = document.getElementById('home')
-  const menu = document.getElementById('menu')
-  const contact = document.getElementById('contact')
-  const section = document.querySelector('.section')
 
   home.addEventListener('click', () => {
+    closeMenu()
+    contactContent.style.display = 'none'
     menuContent.style.display = 'none'
     homeContent.style.display = ''
     section.classList.remove('nHome')
   })
 
-  menu.addEventListener('click', () => {
+  menuTab.addEventListener('click', () => {
+    closeMenu()
+    contactContent.style.display = 'none'
     homeContent.style.display = 'none'
     menuContent.style.display = 'block'
     section.classList.add('nHome')
   })
 
   contact.addEventListener('click', () => {
+    closeMenu()
     homeContent.style.display = 'none'
     menuContent.style.display = 'none'
-    section.classList.add('nHome')
+    contactContent.style.display = 'block'
+    section.classList.remove('nHome')
   })
-})()
+
+  // close the menu when something new has been chosen
+  function closeMenu() {
+    if (innerWidth < 601) {
+      closeBtn.click()
+    }
+  }
+
+  // add the footer
+  const github = document.querySelector('.git')
+  const github2 = document.querySelector('.gitMenu')
+  const github3 = document. querySelector('.gitContact')
+  github.src = github2.src = github3.src = gitlogo
+
+})();

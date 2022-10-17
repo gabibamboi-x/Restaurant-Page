@@ -1,7 +1,17 @@
+@font-face {
+  font-family: myFont;
+  src: url(../Fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: myFont, 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: #FAF9F6;
 }
 
 section {
@@ -34,11 +44,12 @@ section {
   font-weight: 500;
   color: black;
   margin-left: 40px;
+  margin-right: -20px;
 }
 
 .header li {
   margin-right: 40px;
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid #FAF9F6;
 }
 
 .header li:hover {
@@ -93,7 +104,7 @@ section {
 .textBox a {
   text-decoration: none;
   font-size: 20px;
-  color: white;
+  color: #FAF9F6;
   background-color: red;
   padding: 10px 20px;
   border-radius: 40px;
@@ -122,25 +133,42 @@ section {
 }
 
 .socialMedia li a {
-  border-left: 3px solid white;
+  border-left: 3px solid #FAF9F6;
 }
 
 .socialMedia li:hover a {
   border-left: 3px solid rgb(0, 0, 0);
 }
 
-footer {
+.mainContent footer {
   position: absolute;
   bottom: 0;
 }
 
-a {
+a,
+.credit a {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
   text-decoration: none;
   color: grey;
+}
+
+.credit {
+  padding-top: 30px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+}
+
+.credit div {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px
 }
 
 a img {
