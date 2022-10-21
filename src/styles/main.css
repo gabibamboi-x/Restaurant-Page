@@ -50,6 +50,7 @@ section {
 .header li {
   margin-right: 40px;
   border-bottom: 3px solid #FAF9F6;
+  cursor: pointer;
 }
 
 .header li:hover {
