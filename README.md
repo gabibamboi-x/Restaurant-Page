@@ -10,7 +10,7 @@ Restaurant Page is a simple cafe website made with npm and webpack.
 
 ## Lessons Learned
 
-The hardest part making this project was designing it. Coming up with new designs on new project is always a challange for me, it is however not imposible and so i kept going. A second challange was webpack which was a new way to develop a website for me as a beginner, though i'm starting to like it. npm and the 'watch', 'serve' scripts were also something i see myself using quite often in the future.
+The hardest part making this project was designing it. Coming up with new designs on new projects is always a challange for me, it is however not imposible and so i kept going. A second challange was webpack which was a new way to develop a website for me as a beginner, though i'm starting to like it. npm and the 'watch', 'serve' scripts were also something i see myself using quite often in the future.
 
 
 ## Tech Stack
